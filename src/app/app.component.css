@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+}
+
+
+/* contenedor del sidabar */
+.sidebar{
+  background: rgb(37, 37, 37);
+  width: 250px;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+a {
+  background: #e2e5ff;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container-ppal{
+  width: 100%;
+  padding: 20px;
+}
+
+

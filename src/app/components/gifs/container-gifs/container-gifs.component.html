@@ -1,0 +1,12 @@
+<!-- 
+<ul>
+    <li *ngFor="let gif of resultado">
+            {{gif.title}}
+    </li>
+</ul> -->
+
+<div class="container">
+  <div *ngFor="let gif of resultado" class="imagemes">
+    <img [src]="gif.images.downsized_medium.url" >
+  </div>
+</div>

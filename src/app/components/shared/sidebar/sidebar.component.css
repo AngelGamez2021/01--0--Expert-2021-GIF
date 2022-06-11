@@ -1,0 +1,31 @@
+/* contenedor del sidabar */
+.container-sidebar {
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+hr {
+  width: 100%;
+}
+
+.menu {
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-grid;
+}
+
+a {
+  background: #e2e5ff;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+
+}

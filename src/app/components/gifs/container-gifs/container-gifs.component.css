@@ -1,0 +1,15 @@
+.container {
+  padding: 10px;
+  background: rgb(240, 240, 240);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  gap: 2rem;
+}
+
+img {
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
