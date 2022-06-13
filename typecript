@@ -1,0 +1,30 @@
+EN EL TSC CONFIG
+"noImplicitAny": true
+sirve para que salga error en cualquier declaracion de tipo ANY
+
+"strictNullChecks": true, 
+ Lanza errores si hay alguna variable que sea null 
+ 
+ 
+ Modo observador
+ tsc -w
+ tsc --watch
+(este queda observando cualquier cambio del ts para que lo añada al js, reecompila)
+
+
+let
+const(no se puede modificar  ala larga) 
+const ejemplo : 2;
+const ejemeplo: 2 XXXX malo
+
+si mensaje este tipo string, solo texto podria cambiar el mensaje
+
+let mensaje ='ejemplo'
+let mensaje = 123 XXXX malo
+let mensaje = 'ejemplo2', si acepta tsc
+
+manera aceptable de es declarar:
+let mensaje: string = 'ejemplo'
+
+si declaramos asi, nos saldrá un tipo any
+let mensaje;
