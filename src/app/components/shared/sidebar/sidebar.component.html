@@ -2,7 +2,12 @@
   <h3>Gifs-App</h3>
   <hr />
 
-  <div class="menu">
-    <a *ngFor="let item of historial"> {{ item | titlecase }} </a>
+  <div class="menu animated fadeIn">
+    <a *ngFor="let item of historial"
+    href="#"
+    (click)="buscar(item)"
+    
+    > {{ item | titlecase }} </a>
+    
   </div>
 </div>

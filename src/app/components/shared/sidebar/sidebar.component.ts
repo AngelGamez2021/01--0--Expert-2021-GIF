@@ -6,15 +6,21 @@ import { GifsService } from 'src/app/services/gifs.service';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent  {
+export class SidebarComponent {
 
 
   constructor(private _gifsService: GifsService) { }
 
-  get historial(){
+  get historial() {
     return this._gifsService.historial
 
-  
+  }
+
+
+  buscar(termino: string) {
+
+    this._gifsService.buscarGifs(termino)
+
   }
 
 

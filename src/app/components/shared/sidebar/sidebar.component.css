@@ -22,10 +22,17 @@ hr {
 
 a {
   background: #e2e5ff;
+  color: black;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
   margin-bottom: 10px;
   text-align: center;
+  text-decoration: none;
+}
 
+a:hover {
+  background: #1d1d1d;
+  color: white;
+  text-decoration: none;
 }

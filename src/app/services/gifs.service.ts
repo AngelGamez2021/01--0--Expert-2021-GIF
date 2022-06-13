@@ -15,12 +15,14 @@ export class GifsService {
 
   constructor(private http: HttpClient) { 
     this._historial = JSON.parse(localStorage.getItem('historial')!) || []
+    this.resultado = JSON.parse(localStorage.getItem('resultado')!) || []
+
   }
 
   get historial() {
     return [...this._historial];
   }
-
+ 
 
   buscarGifs(termino: string) {
  
@@ -34,6 +36,7 @@ export class GifsService {
 
       localStorage.setItem('historial', JSON.stringify( this._historial ));
     }
+    // se está almancenando en el histoial, un JSON de string, del historial que vamos añadiendo 
 
     this._historial = this._historial.splice(0, 9)
     //estamos cortando hasta 10 terminos 
@@ -41,8 +44,10 @@ export class GifsService {
     this.http.get<TypeGif>(`${this.url}api_key=${this.apiKey}&q=${termino}&limit=12`)
       .subscribe(resp => {
         console.log(resp.data);
-
         this.resultado = resp.data;
+
+      localStorage.setItem('resultado', JSON.stringify( this.resultado ));
+
 
       })
 
